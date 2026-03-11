@@ -3,12 +3,13 @@ name: Deploy
 
 on:
   push:
-    branchs: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
-    environment: production
     runs-on: ubuntu-latest
+    environment: production
+    
     steps:
       - run: echo "Deploying..."
       
